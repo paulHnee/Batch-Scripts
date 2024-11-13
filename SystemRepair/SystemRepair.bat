@@ -54,6 +54,5 @@ if %errorlevel% neq 0 (
         echo DISM /restorehealth wird uebersprungen.
     )
 )
-color B
-echo Alle ueberpruefungen und Reparaturen sind abgeschlossen.
+powershell -command "Write-Host 'Alle ueberpruefungen und Reparaturen sind abgeschlossen.' -ForegroundColor Green"
 pause
