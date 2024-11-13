@@ -1,6 +1,6 @@
 @echo off
 color 7
-echo Systemdateien werden überprüft und das Wartungs-Tool DISM wird ausgeführt...
+echo Systemdateien werden ueberprueft und das Wartungs-Tool DISM wird ausgefuehrt...
 
 :sfc
 echo Schritt 1: Starte sfc /scannow
@@ -12,7 +12,7 @@ if %errorlevel% neq 0 (
     if /i "%retry_sfc%"=="j" (
         goto :sfc
     ) else (
-        echo SFC wird übersprungen.
+        echo SFC wird uebersprungen.
     )
 )
 
@@ -25,7 +25,7 @@ if %errorlevel% neq 0 (
     if /i "%retry_scan%"=="j" (
         goto :dism_scanhealth
     ) else (
-        echo DISM /scanhealth wird übersprungen.
+        echo DISM /scanhealth wird uebersprungen.
     )
 )
 
@@ -38,7 +38,7 @@ if %errorlevel% neq 0 (
     if /i "%retry_check%"=="j" (
         goto :dism_checkhealth
     ) else (
-        echo DISM /checkhealth wird übersprungen.
+        echo DISM /checkhealth wird uebersprungen.
     )
 )
 
@@ -51,9 +51,9 @@ if %errorlevel% neq 0 (
     if /i "%retry_restore%"=="j" (
         goto :dism_restorehealth
     ) else (
-        echo DISM /restorehealth wird übersprungen.
+        echo DISM /restorehealth wird uebersprungen.
     )
 )
 color B
-echo Alle Überprüfungen und Reparaturen sind abgeschlossen.
+echo Alle ueberpruefungen und Reparaturen sind abgeschlossen.
 pause
