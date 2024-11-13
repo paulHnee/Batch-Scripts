@@ -65,5 +65,5 @@ if %errorlevel% neq 0 (
     )
 )
 color B
-echo Alle Überprüfungen und Reparaturen sind abgeschlossen.
+echo Alle Ueberpruefungen und Reparaturen sind abgeschlossen.
 pause
